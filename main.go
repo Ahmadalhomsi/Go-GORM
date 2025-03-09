@@ -45,4 +45,9 @@ func main() {
 
     // Delete user
     db.Delete(&foundUser)
+
+	fmt.Printf("\nDeleted user")
+
+	// Close connection
+	db.Close()
 }
